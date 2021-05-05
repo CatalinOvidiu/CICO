@@ -1,0 +1,51 @@
+﻿@model CICO.Models.JournalModel
+
+@{
+    ViewBag.Title = "JournalDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>JournalDetails</h2>
+
+<div>
+    <h4>JournalModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdJournal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdJournal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAliment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAliment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MealName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MealName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CalloriesAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CalloriesAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.IdJournal  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICO", "CICO\CICO.csproj", "{084FAD13-9C06-48E5-BF73-93F9A05CF91A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICO.Tests", "CICO.Tests\CICO.Tests.csproj", "{7E8DFE16-867F-475B-BB22-4FED281422C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084FAD13-9C06-48E5-BF73-93F9A05CF91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084FAD13-9C06-48E5-BF73-93F9A05CF91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084FAD13-9C06-48E5-BF73-93F9A05CF91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084FAD13-9C06-48E5-BF73-93F9A05CF91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8DFE16-867F-475B-BB22-4FED281422C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8DFE16-867F-475B-BB22-4FED281422C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8DFE16-867F-475B-BB22-4FED281422C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8DFE16-867F-475B-BB22-4FED281422C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15D4FCAD-6D65-4793-AB13-97B70225C9B2}
+	EndGlobalSection
+EndGlobal
