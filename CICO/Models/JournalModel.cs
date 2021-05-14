@@ -14,12 +14,13 @@ namespace CICO.Models
         [Required(ErrorMessage ="Mandatory field")]
         [DisplayName("Aliment")]
         public Guid IdAliment { get; set; }
-        
+
         [Required(ErrorMessage = "Mandatory field")]
         public string MealName { get; set; }
 
         [Required(ErrorMessage = "Mandatory field")]
         public decimal CalloriesAmount { get; set; }
+        public List<AlimentModel> Aliments { get; set; }
 
     }
 }

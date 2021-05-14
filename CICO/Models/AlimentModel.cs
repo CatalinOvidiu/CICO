@@ -8,7 +8,6 @@ namespace CICO.Models
 {
     public class AlimentModel
     {
-        
         public Guid IdAliment { get; set; }
 
         [Required(ErrorMessage = "Mandatory field")]

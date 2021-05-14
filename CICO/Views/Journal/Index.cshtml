@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<CICO.Models.JournalModel>
 
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -12,12 +13,11 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IdJournal)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.IdAliment)
         </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.MealName)
         </th>
@@ -27,26 +27,26 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdJournal)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdAliment)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MealName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CalloriesAmount)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.IdJournal  }) |
-            @Html.ActionLink("Details", "Details", new {  id=item.IdJournal  }) |
-            @Html.ActionLink("Delete", "Delete", new {  id=item.IdJournal  })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+<tr>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.IdAliment)
+    </td>
+    
+    <td>
+        @Html.DisplayFor(modelItem => item.MealName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CalloriesAmount)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.IdJournal }) |
+        @Html.ActionLink("Details", "Details", new { id = item.IdJournal }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.IdJournal })
+    </td>
+</tr>
+    }
 
 </table>

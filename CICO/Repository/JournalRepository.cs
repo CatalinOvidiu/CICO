@@ -8,7 +8,6 @@ namespace CICO.Repository
 {
     public class JournalRepository
     {
-
         //injectam container-ul ORM
         private Models.DBObjects.CICOModelsDataContext dbContext;
         public JournalRepository()

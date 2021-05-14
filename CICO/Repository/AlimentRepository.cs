@@ -64,12 +64,12 @@ namespace CICO.Repository
         //map ORM model to Model object – mapper method
         private AlimentModel MapDbObjectToModel(Models.DBObjects.Aliment dbAliment)
         {
-            AlimentModel alimentlModel = new AlimentModel();
+            AlimentModel alimentModel = new AlimentModel();
             if (dbAliment != null)
             {
-                alimentlModel.IdAliment = dbAliment.IdAliment;
-                alimentlModel.Name = dbAliment.Name;
-                return alimentlModel;
+                alimentModel.IdAliment = dbAliment.IdAliment;
+                alimentModel.Name = dbAliment.Name;
+                return alimentModel;
             }
             return null;
         }
@@ -81,6 +81,7 @@ namespace CICO.Repository
             {
                 dbAlimentModel.IdAliment = alimentModel.IdAliment;
                 dbAlimentModel.Name = alimentModel.Name;
+                return dbAlimentModel;
             }
             return null;
 

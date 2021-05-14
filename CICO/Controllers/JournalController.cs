@@ -59,8 +59,8 @@ namespace CICO.Controllers
 
                 //save model
                 journalRepository.InsertJournal(journalModel);
-
-                //rediret to index if succesfull
+                
+            //rediret to index if succesfull
                 return RedirectToAction("Index");
             }
             
